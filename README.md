@@ -15,7 +15,7 @@ squidGuard Reports es una aplicación que se encarga de parsear los archivos de 
 Clonar el repositorio en una ruta accesible desde el servidor Web.
 ```
 cd /var/www/html
-git clone https://github.com/ramonromancastro/squidguardreports.git
+git clone https://github.com/ramonromancastro/squidguard-reports.git
 ```
 Crear los archivos de configuración y establecer las opciones de configuración.
 ```
@@ -24,17 +24,21 @@ cp config.template.php config.php
 ```
 Crear las tareas programadas que se encargan de la recolección de los archivos de registro.
 ```
-echo "#!/bin/bash" > /etc/cron.daily/squidguardreports.cron
-echo "/var/www/html/squidguardreports/squidguardparser.pl yesterday" >> /etc/cron.daily/squidguardreports.cron
-chmod +x /etc/cron.daily/squidguardreports.cron
-echo "0 8-20 * * * root /var/www/html/squidguardreports/squidguardparser.pl today" > /etc/cron.d/squidguardreports.cron
+tee /etc/cron.daily/squidguard-reports.cron << EOF
+#!/bin/bash
+perl /var/www/html/squidguard-reports/squidguardparser.pl yesterday
+EOF
+chmod +x /etc/cron.daily/squidguard-reports.cron
+tee /etc/cron.d/squidguard-reports.cron << EOF
+0 8-20 * * * root /var/www/html/squidguard-reports/squidguardparser.pl today" > /etc/cron.d/squidguard-reports.cron
+EOF
 ```
 Ejecutar squidguardparser.pl para la recolección inicial de los datos del registro.
 ```
-/var/www/html/squidguardreports/squidguardparser.pl
+perl /var/www/html/squidguard-reports/squidguardparser.pl
 ```
 
 ## Recursos adicionales
 
 * [Sitio Web oficial](http://www.rrc2software.com)
-* [Repositorio GitHub](https://github.com/ramonromancastro/squidguardreports)
+* [Repositorio GitHub](https://github.com/ramonromancastro/squidguard-reports)
