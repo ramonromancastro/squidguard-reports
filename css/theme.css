@@ -1,0 +1,28 @@
+/************************/
+/* GOOGLE FONTS         */
+/************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {font-family: 'Roboto', sans-serif; color: #333;}
+
+/************************/
+/* CUSTOM STYLE         */
+/************************/
+
+#header,#footer{}
+#main{background-color: #fafafa;}
+
+/************************/
+/* W3.CSS CUSTOMIZATION */
+/************************/
+
+.w3-table, .w3-table-all { min-width: 50%; width: auto; font-size: 12px;}
+.w3-card, .w3-card-2, .w3-card-4{ background-color:white;}
+.w3-content { max-width: 1100px;}
+
+/************************/
+/* W3.CSS ADDONS        */
+/************************/
+
+.w3-no-wrap {white-space: nowrap;}
+.w3-exact{white-space: nowrap;width:1px;}
