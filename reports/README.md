@@ -1,1 +1,1 @@
-Este directorio contiene los datos procesados delos archivos de registro de aquidGuard.
+Este directorio contiene los datos procesados de los archivos de registro de aquidGuard.
