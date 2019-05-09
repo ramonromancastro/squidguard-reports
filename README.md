@@ -40,5 +40,5 @@ perl /var/www/html/squidguard-reports/squidguardparser.pl
 
 ## Recursos adicionales
 
-* [Sitio Web oficial](http://www.rrc2software.com)
+* [Sitio Web oficial](http://squidguard-reports.rrc2software.com)
 * [Repositorio GitHub](https://github.com/ramonromancastro/squidguard-reports)
