@@ -34,6 +34,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Corregidos los enlaces a meses en la página principal para que apunten al año seleccionado.
 
 [Unreleased]: https://github.com/ramonromancastro/squidguard-reports/compare/v0.2.5...HEAD
-[0.2.5]: https://github.com/ramonromancastro/squidguard-reports/compare/v0.2.4...v0.2.5
-[0.2.4]: https://github.com/ramonromancastro/squidguard-reports/compare/v0.2.3...v0.2.4
-[0.2.3]: https://github.com/ramonromancastro/squidguard-reports/releases/tag/v0.2.3
+[0.2.5]: https://github.com/ramonromancastro/squidguard-reports/releases/tag/v0.2.5
